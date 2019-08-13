@@ -1,0 +1,333 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Workflow &mdash; Open Simulation Interface v3.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/jquery.fancybox.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/glpi.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Open Simulation Interface v3.1.2 documentation" href="../index.html"/>
+        <link rel="next" title="Commenting" href="commenting.html"/>
+        <link rel="prev" title="osivalidator package" href="../osi-validator/osivalidator.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Open Simulation Interface
+          
+
+          
+          </a>
+
+          
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../includeme.html">OSI Validation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Building and Installation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">How to install</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Introduction tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="coordinatesystem.html">Coordinate systems and reference points</a></li>
+</ul>
+<p class="caption"><span class="caption-text">OSI Validation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../osi-validator/osivalidator-module.html">OSI Validation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributer's Guidelines</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Workflow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#git-tutorial">Git Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#branching-workflow-member">Branching Workflow (member)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#forking-workflow-no-member">Forking Workflow (no member)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issues">Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentations-changes">Documentations changes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="commenting.html">Commenting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versioning.html">Versioning</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Open Simulation Interface</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Workflow</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/osi/workflow.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="commenting.html" class="btn btn-neutral float-right" title="Commenting" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../osi-validator/osivalidator.html" class="btn btn-neutral" title="osivalidator package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="workflow">
+<h1>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="git-tutorial">
+<h2>Git Tutorial<a class="headerlink" href="#git-tutorial" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Chacon, Scott, and Ben Straub. Pro git. Apress, 2014. <a class="reference external" href="https://link.springer.com/book/10.1007%2F978-1-4842-0076-6">Download PDF</a></p></li>
+<li><p><a class="reference external" href="https://help.github.com/en/articles/fork-a-repo#platform-linux">Fork a Repo</a></p></li>
+<li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">Forking Workflow</a></p></li>
+</ol>
+</div>
+<div class="section" id="branching-workflow-member">
+<h2>Branching Workflow (member)<a class="headerlink" href="#branching-workflow-member" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Create issues for <strong>fundamental</strong> changes!</p></li>
+<li><p>Clone repository on your local machine</p></li>
+<li><p>Create a branch with a meaningfull name: <code class="docutils literal notranslate"><span class="pre">prefix/name</span></code>, <code class="docutils literal notranslate"><span class="pre">feature/new-environmental-conditions</span></code></p></li>
+<li><p>prefixes: feature, experimental, bug, etc.</p></li>
+<li><p>Add your suggestions to the code Do not use: <code class="docutils literal notranslate"><span class="pre">*git</span> <span class="pre">add</span> <span class="pre">-A</span> <span class="pre">*git</span> <span class="pre">commit</span> <span class="pre">-A</span></code></p></li>
+<li><p>The code should compile for a pull-request! ^_^</p></li>
+<li><p>Try to make small changes for easier discussions</p></li>
+<li><p>The person willing to merge needs to change the InterfaceVersion according to <a class="reference internal" href="versioning.html#versioning"><span class="std std-ref">Versioning</span></a> before hitting merge</p></li>
+</ul>
+</div>
+<div class="section" id="forking-workflow-no-member">
+<h2>Forking Workflow (no member)<a class="headerlink" href="#forking-workflow-no-member" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Create a personal fork on your account</p></li>
+<li><p>Clone to your local machine</p></li>
+<li><p>Make changes</p></li>
+<li><p>Create pull-request</p></li>
+<li><p>Discuss with issues and with comments in the pull-request</p></li>
+<li><p>!!! Consider becoming a member !!!</p></li>
+</ul>
+</div>
+<div class="section" id="issues">
+<h2>Issues<a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Everyone can create an issue</p></li>
+<li><p>Issues may be created to discuss:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>problems</p></li>
+<li><p>bugs</p></li>
+<li><p>feature requests</p></li>
+<li><p>ideas</p></li>
+<li><p>I am sad -&gt; please help me</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>If practicable issues should be closed by a referenced pull request or commit (<a class="reference external" href="https://help.github.com/en/articles/closing-issues-using-keywords">Here</a> you can find keywords to close issues automatically)</p></li>
+</ul>
+</div>
+<div class="section" id="documentations-changes">
+<h2>Documentations changes<a class="headerlink" href="#documentations-changes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Can be performed by any member</p></li>
+<li><p>Consider adding stuff :)</p></li>
+</ul>
+<p>HAVE FUN! SAVE THE WORLD!</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="commenting.html" class="btn btn-neutral float-right" title="Commenting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../osi-validator/osivalidator.html" class="btn btn-neutral" title="osivalidator package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Viktor Kreschenski.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'v3.1.2',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+  <script type="text/javascript">
+    $(function(){
+      $('.image-reference').fancybox();
+    })
+  </script>
+
+</body>
+</html>
