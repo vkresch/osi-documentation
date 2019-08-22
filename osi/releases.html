@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Versioning &mdash; Open Simulation Interface v3.1.2 documentation</title>
+  <title>Releases &mdash; Open Simulation Interface v3.1.2 documentation</title>
   
 
   
@@ -41,7 +41,8 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="Open Simulation Interface v3.1.2 documentation" href="../index.html"/>
-        <link rel="prev" title="Commenting" href="commenting.html"/> 
+        <link rel="next" title="v2.0.0 - OSI Initial Commit" href="releases/v02.00.00.html"/>
+        <link rel="prev" title="OSI files description" href="osifiles.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -90,10 +91,21 @@
             
             
               <p class="caption"><span class="caption-text">Introduction:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="README.html">Open Simulation Interface (OSI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="osifiles.html">OSI files description</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releases.html">Releases</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Releases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="releases/v02.00.00.html">v2.0.0 - OSI Initial Commit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases/v02.01.00.html">v2.1.0 - OSI “Agile Andretti”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases/v02.02.00.html">v2.2.0 - OSI “Brave Brabham”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases/v02.02.00.html#v2-2-1-osi-brave-brabham-update-1">v2.2.1 - OSI “Brave Brabham”, Update 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases/v03.00.00.html">v3.0.0 - OSI “Cosmic Coulthard”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases/v03.00.00.html#v3-0-1-osi-cosmic-coulthard-update-1">v3.0.1 - OSI “Cosmic Coulthard”, Update 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases/v03.01.00.html">v3.1.0 - OSI “Dynamic Duncan”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases/v03.01.00.html#v3-1-1-osi-dynamic-duncan-update-1">v3.1.1 - OSI “Dynamic Duncan”, Update 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases/v03.01.00.html#v3-1-2-osi-dynamic-duncan-update-2">v3.1.2 - OSI “Dynamic Duncan”, Update 2</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Building and Installation:</span></p>
 <ul>
@@ -116,10 +128,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../osi-model-packaging/README.html">OSI Sensor Model Packaging</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Contributer's Guidelines:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="howtocontribute.html">How to contribute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="commenting.html">Commenting</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Versioning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versioning.html">Versioning</a></li>
 </ul>
 
             
@@ -164,13 +176,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Versioning</li>
+      <li>Releases</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/osi/versioning.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/osi/releases.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -180,8 +192,10 @@
   
   <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
       
+        <a href="releases/v02.00.00.html" class="btn btn-neutral float-right" title="v2.0.0 - OSI Initial Commit" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="commenting.html" class="btn btn-neutral" title="Commenting" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="osifiles.html" class="btn btn-neutral" title="OSI files description" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
   </div>
   
@@ -190,28 +204,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="versioning">
-<span id="id1"></span><h1>Versioning<a class="headerlink" href="#versioning" title="Permalink to this headline">¶</a></h1>
-<p>The version number is defined in <code class="docutils literal notranslate"><span class="pre">InterfaceVersion::version_number</span></code> in <code class="docutils literal notranslate"><span class="pre">osi_common.proto</span></code> as the field’s default value.</p>
-<p><a class="reference external" href="https://semver.org/">Link to Semantic Versioning</a></p>
-<p><strong>Major</strong>: A change of the major version results in an incompatibility of code and recorded proto messages.</p>
-<ul class="simple">
-<li><p>An existing field with a number changes its meaning <code class="docutils literal notranslate"><span class="pre">optional</span> <span class="pre">double</span> <span class="pre">field</span> <span class="pre">=</span> <span class="pre">1;</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">repeated</span> <span class="pre">double</span> <span class="pre">field</span> <span class="pre">=</span> <span class="pre">1;</span></code> Changing the definition of units or interpretation of a field</p></li>
-<li><p>Deleting a field and reusing the field number</p></li>
-<li><p>Changing the technology ProtoBuffer -&gt; FlatBuffer</p></li>
+  <div class="section" id="releases">
+<h1>Releases<a class="headerlink" href="#releases" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Release History:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="releases/v02.00.00.html">v2.0.0 - OSI Initial Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases/v02.01.00.html">v2.1.0 - OSI “Agile Andretti”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases/v02.02.00.html">v2.2.0 - OSI “Brave Brabham”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases/v02.02.00.html#v2-2-1-osi-brave-brabham-update-1">v2.2.1 - OSI “Brave Brabham”, Update 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases/v03.00.00.html">v3.0.0 - OSI “Cosmic Coulthard”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases/v03.00.00.html#v3-0-1-osi-cosmic-coulthard-update-1">v3.0.1 - OSI “Cosmic Coulthard”, Update 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases/v03.01.00.html">v3.1.0 - OSI “Dynamic Duncan”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases/v03.01.00.html#v3-1-1-osi-dynamic-duncan-update-1">v3.1.1 - OSI “Dynamic Duncan”, Update 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases/v03.01.00.html#v3-1-2-osi-dynamic-duncan-update-2">v3.1.2 - OSI “Dynamic Duncan”, Update 2</a></li>
 </ul>
-<p><strong>Minor</strong>: A change of the minor version indicates remaining compatibility to previously recorded files. The code on the other hand needs fixing.</p>
-<ul class="simple">
-<li><p>Renaming of a field without changing the field number</p></li>
-<li><p>Changing the names of messages</p></li>
-<li><p>Adding a new field in a message without changing the numbering of other fields</p></li>
-</ul>
-<p><strong>Patch</strong>: The compatibility of both recorded files and code remains.</p>
-<ul class="simple">
-<li><p>File or folder structure which does not affect including the code in other projects</p></li>
-<li><p>Changing or adding comments</p></li>
-<li><p>Clarification of text passages explaining the message content</p></li>
-</ul>
+</div>
 </div>
 
 
@@ -224,8 +232,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="releases/v02.00.00.html" class="btn btn-neutral float-right" title="v2.0.0 - OSI Initial Commit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="commenting.html" class="btn btn-neutral" title="Commenting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="osifiles.html" class="btn btn-neutral" title="OSI files description" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -41,7 +41,7 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="Open Simulation Interface v3.1.2 documentation" href="../index.html"/>
-        <link rel="next" title="Usage" href="usage.html"/>
+        <link rel="next" title="Installation Guide" href="setup.html"/>
         <link rel="prev" title="Coordinate systems and reference points" href="../osi/coordinatesystem.html"/> 
 
   
@@ -93,6 +93,8 @@
               <p class="caption"><span class="caption-text">Introduction:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../osi/README.html">Open Simulation Interface (OSI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osi/osifiles.html">OSI files description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osi/releases.html">Releases</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Building and Installation:</span></p>
 <ul>
@@ -105,8 +107,8 @@
 <p class="caption"><span class="caption-text">OSI Validation:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">OSI Validation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Installation Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usage.html">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="writing-rules.html">How to write rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="osivalidator.html">osivalidator package</a></li>
 </ul>
@@ -185,7 +187,7 @@
   
   <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
       
-        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="setup.html" class="btn btn-neutral float-right" title="Installation Guide" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../osi/coordinatesystem.html" class="btn btn-neutral" title="Coordinate systems and reference points" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -198,17 +200,23 @@
            <div itemprop="articleBody">
             
   <div class="section" id="osi-validation">
-<h1>OSI Validation<a class="headerlink" href="#osi-validation" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>OSI Validation<a class="headerlink" href="#osi-validation" title="Permalink to this headline">¶</a></h1>
 <p>The OSI Validator recursively checks the compliance of an OSI message of type
-<cite>SensorData</cite>, <cite>SensorView</cite> or <cite>GroundTruth</cite> according to predefined or
+<code class="docutils literal notranslate"><span class="pre">SensorData</span></code>, <code class="docutils literal notranslate"><span class="pre">SensorView</span></code> or <code class="docutils literal notranslate"><span class="pre">GroundTruth</span></code> according to predefined or
 personalized rules.</p>
 <p>The basic requirements for OSI 3 are gathered in the
 <a class="reference external" href="./KPIs/index.html">KPIs documentation</a>.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rules.html">Rules</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rules.html#module-osivalidator.osi_rules_implementations">osivalidator.osi_rules_implementations module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#setup-for-linux-users">Setup for linux users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#setup-for-linux-developers">Setup for linux developers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#setup-for-windows-users">Setup for windows users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#setup-for-windows-developers">Setup for windows developers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#example">Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="writing-rules.html">How to write rules</a><ul>
@@ -246,7 +254,7 @@ personalized rules.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="setup.html" class="btn btn-neutral float-right" title="Installation Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../osi/coordinatesystem.html" class="btn btn-neutral" title="Coordinate systems and reference points" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

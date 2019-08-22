@@ -94,6 +94,8 @@
               <p class="caption"><span class="caption-text">Introduction:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../osi/README.html">Open Simulation Interface (OSI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osi/osifiles.html">OSI files description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osi/releases.html">Releases</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Building and Installation:</span></p>
 <ul>
@@ -106,8 +108,8 @@
 <p class="caption"><span class="caption-text">OSI Validation:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="osivalidator-module.html">OSI Validation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Installation Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usage.html">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="writing-rules.html">How to write rules</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">osivalidator package</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#module-osivalidator.linked_proto_field">osivalidator.linked_proto_field module</a></li>
@@ -213,7 +215,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="osivalidator-package">
-<h1>osivalidator package<a class="headerlink" href="#osivalidator-package" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>osivalidator package<a class="headerlink" href="#osivalidator-package" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="module-osivalidator.linked_proto_field">
 <span id="osivalidator-linked-proto-field-module"></span><h2>osivalidator.linked_proto_field module<a class="headerlink" href="#module-osivalidator.linked_proto_field" title="Permalink to this headline">¶</a></h2>
 <p>This class describe a wrapper on protobuf fields that add a link
@@ -413,7 +415,7 @@ reference is resolved</p>
 validation rules tree.</p>
 <dl class="class">
 <dt id="osivalidator.osi_rules.FieldRules">
-<em class="property">class </em><code class="sig-prename descclassname">osivalidator.osi_rules.</code><code class="sig-name descname">FieldRules</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">rules=None</em>, <em class="sig-param">path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#osivalidator.osi_rules.FieldRules" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">osivalidator.osi_rules.</code><code class="sig-name descname">FieldRules</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">rules=None</em>, <em class="sig-param">path=None</em>, <em class="sig-param">root=None</em><span class="sig-paren">)</span><a class="headerlink" href="#osivalidator.osi_rules.FieldRules" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#osivalidator.osi_rules.OSIRuleNode" title="osivalidator.osi_rules.OSIRuleNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">osivalidator.osi_rules.OSIRuleNode</span></code></a></p>
 <p>This class manages the rules of a Field in a Message Type</p>
 <dl class="method">
@@ -835,8 +837,11 @@ message in the field are complying.</p>
 <dd><p>Check rule for last message of a repeated field.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>params</strong> – dictionary of rules to be checked for the last message
-(mapping)</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>field</strong> – Field to which the rule needs to comply</p></li>
+<li><p><strong>rule</strong> – dictionary of rules to be checked for the last message
+(mapping)</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>

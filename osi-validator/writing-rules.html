@@ -43,7 +43,7 @@
     <link rel="top" title="Open Simulation Interface v3.1.2 documentation" href="../index.html"/>
         <link rel="up" title="OSI Validation" href="osivalidator-module.html"/>
         <link rel="next" title="osivalidator package" href="osivalidator.html"/>
-        <link rel="prev" title="Rules" href="rules.html"/> 
+        <link rel="prev" title="Usage" href="usage.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -94,6 +94,8 @@
               <p class="caption"><span class="caption-text">Introduction:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../osi/README.html">Open Simulation Interface (OSI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osi/osifiles.html">OSI files description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osi/releases.html">Releases</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Building and Installation:</span></p>
 <ul>
@@ -106,8 +108,8 @@
 <p class="caption"><span class="caption-text">OSI Validation:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="osivalidator-module.html">OSI Validation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Installation Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usage.html">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">How to write rules</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#folder-structure">Folder structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#file-structure">File structure</a></li>
@@ -117,7 +119,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#severity">Severity</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Example</a></li>
 </ul>
 </li>
 </ul>
@@ -204,7 +206,7 @@
         <a href="osivalidator.html" class="btn btn-neutral float-right" title="osivalidator package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="rules.html" class="btn btn-neutral" title="Rules" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="usage.html" class="btn btn-neutral" title="Usage" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
   </div>
   
@@ -214,7 +216,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="how-to-write-rules">
-<h1>How to write rules<a class="headerlink" href="#how-to-write-rules" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>How to write rules<a class="headerlink" href="#how-to-write-rules" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="folder-structure">
 <h2>Folder structure<a class="headerlink" href="#folder-structure" title="Permalink to this headline">¶</a></h2>
 <p>The rules are contained into YAML files into one folder. The organization of
@@ -274,7 +276,7 @@ followed by a column “:”). What comes after the column is totally free and
 depends on the rule used. For instance, the rule <code class="docutils literal notranslate"><span class="pre">in_range</span></code> accept a sequence
 of double ; the rule <code class="docutils literal notranslate"><span class="pre">each</span></code> ask for mappings. Other rules accept string,
 number, etc.</p>
-<p>The available rule and their usage are explained here: <a class="reference internal" href="rules.html"><span class="doc">Rules</span></a>.</p>
+<p>The available rule and their usage are explained here: <span class="xref std std-doc">rules</span>.</p>
 </div>
 </div>
 <div class="section" id="severity">
@@ -282,8 +284,8 @@ number, etc.</p>
 <p>When an attribute does not comply with a rule, a Warning is throw. An Error
 will be throw if an exclamation mark is written at the end of the verb of a
 rule.</p>
-<div class="section" id="id1">
-<h3>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Example<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>in_range!: [0, 1]
 </pre></div>
 </div>
@@ -304,7 +306,7 @@ rule.</p>
         <a href="osivalidator.html" class="btn btn-neutral float-right" title="osivalidator package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="rules.html" class="btn btn-neutral" title="Rules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="usage.html" class="btn btn-neutral" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

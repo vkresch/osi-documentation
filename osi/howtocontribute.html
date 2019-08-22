@@ -93,6 +93,8 @@
               <p class="caption"><span class="caption-text">Introduction:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="README.html">Open Simulation Interface (OSI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="osifiles.html">OSI files description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">Releases</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Building and Installation:</span></p>
 <ul>
@@ -205,7 +207,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="how-to-contribute">
-<h1>How to contribute<a class="headerlink" href="#how-to-contribute" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>How to contribute<a class="headerlink" href="#how-to-contribute" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>The purpose of this document is to help contributors get started with
@@ -214,15 +216,15 @@ the Open Simulation Interface (OSI) codebase.</p>
 <div class="section" id="reporting-issues">
 <h2>Reporting issues<a class="headerlink" href="#reporting-issues" title="Permalink to this headline">¶</a></h2>
 <p>The simplest way to contribute to OSI is to report issues that you may
-find with the software on <a class="reference external" href="https://github.com/OpenSimulationInterface/open-simulation-interface">github</a>. Everyone can create issues.
+find with the project on <a class="reference external" href="https://github.com/OpenSimulationInterface/open-simulation-interface">github</a>. Everyone can create issues.
 Always make sure to search the existing issues before reporting a new one.
 Issues may be created to discuss:</p>
 <ul class="simple">
-<li><p>problems</p></li>
-<li><p>bugs</p></li>
-<li><p>feature requests</p></li>
-<li><p>ideas</p></li>
-<li><p>I am sad -&gt; please help me :)</p></li>
+<li><p>Problems</p></li>
+<li><p>Bugs</p></li>
+<li><p>Feature requests</p></li>
+<li><p>Ideas</p></li>
+<li><p>I am sad :( -&gt; please help me :)</p></li>
 </ul>
 <p>If practicable issues should be closed by a referenced pull request or commit <a class="reference external" href="https://help.github.com/en/articles/closing-issues-using-keywords">here</a> you can find keywords to close issues automatically).</p>
 </div>
@@ -232,64 +234,70 @@ Issues may be created to discuss:</p>
 website <a class="reference external" href="https://developers.google.com/protocol-buffers/">https://developers.google.com/protocol-buffers/</a> is a great place to start learning.
 You may want to make sure that you master these <a class="reference external" href="https://developers.google.com/protocol-buffers/docs/proto3">advanced concepts</a>.</p>
 <p>Download and install the protocol buffer on your computer, pick up your favorite programming language and try to encode and decode your custom made osi messages.
-It is a good idea to read the <a class="reference external" href="https://developers.google.com/protocol-buffers/docs/tutorials">tutorials</a> for that.</p>
+It is a good idea to read the <a class="reference external" href="https://developers.google.com/protocol-buffers/docs/tutorials">tutorials</a> for that in your favorite programming language.</p>
 <p>For contribution you also need be proficient in Git. You can download and read the book Pro Git by Scott Chacon and Ben Straub <a class="reference external" href="https://link.springer.com/book/10.1007%2F978-1-4842-0076-6">here</a> for free.
-Learn <a class="reference external" href="https://help.github.com/en/articles/fork-a-repo#platform-linux">how to fork a repository</a> and follow the suggested <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">fork workflow</a> by Atlassian.</p>
+Learn <a class="reference external" href="https://help.github.com/en/articles/fork-a-repo#platform-linux">how to fork a repository</a> and follow the suggested <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">fork workflow</a> by Atlassian.
+Become a github guru :).</p>
 </div>
 <div class="section" id="where-to-start">
 <h2>Where to start<a class="headerlink" href="#where-to-start" title="Permalink to this headline">¶</a></h2>
 <p>While you familiarize yourself with the basics as suggested above, you
-can have a look at the <a class="reference external" href="https://opensimulationinterface.github.io/open-simulation-interface/">doxgen API reference</a>. of OSI. It will
-give you an overview of the OSI messages, their main components and their meaning.</p>
+can have a look at the <a class="reference external" href="https://opensimulationinterface.github.io/open-simulation-interface/annotated.html">doxgen API reference</a>. of OSI. It will
+give you an overview of the OSI messages, fields, their main components and their meaning.</p>
 </div>
 <div class="section" id="our-git-workflow">
 <h2>Our git workflow<a class="headerlink" href="#our-git-workflow" title="Permalink to this headline">¶</a></h2>
 <p>First, the main repository of the OSI Organization is <a class="reference external" href="https://github.com/OpenSimulationInterface/open-simulation-interface">https://github.com/OpenSimulationInterface/open-simulation-interface</a>.
-The other repositories are subcomponents which add functionality to OSI like <a class="reference external" href="https://github.com/OpenSimulationInterface/osi-validation">validation</a>, <a class="reference external" href="https://github.com/OpenSimulationInterface/osi-visualizer">visualization</a> and <a class="reference external" href="https://github.com/OpenSimulationInterface/osi-sensor-model-packaging">model packaging</a>.
-The repository <a class="reference external" href="https://github.com/OpenSimulationInterface/proto2cpp">proto2cpp</a> is a fork which is used in this project to convert <a href="#id2"><span class="problematic" id="id3">*</span></a>.proto files into <a href="#id4"><span class="problematic" id="id5">*</span></a>.cpp files which can be parsed by doxygen to create a <a class="reference external" href="https://opensimulationinterface.github.io/open-simulation-interface/">reference documentation</a>.</p>
+The other repositories are optional extensions which add functionality to OSI like <a class="reference external" href="https://github.com/OpenSimulationInterface/osi-validation">validation</a>, <a class="reference external" href="https://github.com/OpenSimulationInterface/osi-visualizer">visualization</a> and <a class="reference external" href="https://github.com/OpenSimulationInterface/osi-sensor-model-packaging">model packaging</a>.
+The repository <a class="reference external" href="https://github.com/OpenSimulationInterface/proto2cpp">proto2cpp</a> is a fork which is used in this organization to convert *.proto files into *.cpp files which can be parsed by doxygen to create a <a class="reference external" href="https://opensimulationinterface.github.io/open-simulation-interface/">reference documentation</a>.</p>
 <p>Then, there are many ways to use Git, here is ours:</p>
-<p>We mostly use merge requests for master, meaning that nobody should be pushing
-into master directly. Once a merge request is ready, it is reviewed and
-approved, then merged using the <code class="docutils literal notranslate"><span class="pre">--fast-forward</span></code> option of Git in order to
-maintain a linear history without merge commits.</p>
-<p>For that to work, it means that merge requests must be direct suffixes
-of the master branch. So whenever <code class="docutils literal notranslate"><span class="pre">origin/master</span></code> changes, you have to
-rebase your branch on it, so that your patches always sit on top of
-master. When that happens, you may have to edit your patches during the
-rebase, and then use <code class="docutils literal notranslate"><span class="pre">push</span> <span class="pre">-f</span></code> in your branch to rewrite the history.</p>
-<p>We also enforce a few hygiene rules, so make sure your MR respects them:</p>
+<p>After you have opened an issue, with the tag <code class="docutils literal notranslate"><span class="pre">feature</span> <span class="pre">request</span></code> or <code class="docutils literal notranslate"><span class="pre">idea</span></code>
+explaining your enhancement to the project, you should
+also provide a possible approach or suggest a possible solution.
+After a discussion if the feature is plausible or adds value
+to the project you can create a pull request
+and reference it to your opened issue.</p>
+<p>We mostly use squash and merge for pull requests for master.
+Instead of seeing all of a
+contributor’s individual commits from a topic branch,
+the commits are combined
+into one commit and merged into the master branch.
+Once a pull request is ready, it is reviewed and
+approved, then squashed using the <code class="docutils literal notranslate"><span class="pre">--fast-forward</span></code> option of Git in order to
+maintain a streamlined Git history.</p>
+<p><strong>We also enforce a few hygiene rules</strong>:</p>
 <ul class="simple">
 <li><p>Prefer small atomic commits over a large one that do many things.</p></li>
 <li><p>Don’t mix refactoring and new features.</p></li>
 <li><p>Never mix reindentation, whitespace deletion, or other style changes
 with actual code changes.</p></li>
-<li><p>Try as much as possible to make every patch compile, not only the last one.</p></li>
-<li><p>If you add new functions into a documented interface, don’t forget to
-extend the documentation for your addition.</p></li>
-<li><p>For parts that have specifications in the repository,
-make sure to keep it in sync with the implementation.</p></li>
+<li><p>If you add new osi messages into a *.proto file, don’t forget to
+extend the documentation and comment on the message and on each field (for more information see <a class="reference internal" href="commenting.html#commenting"><span class="std std-ref">Commenting</span></a>).</p></li>
+<li><p>Don’t forget to run
+<a class="reference external" href="https://github.com/OpenSimulationInterface/open-simulation-interface/blob/master/test_cases.py">test_cases.py</a> to check if you followed the correct syntax guidelines for *.proto files</p></li>
+<li><p>If you rebuild the doyxgen documentation run <a class="reference external" href="https://github.com/OpenSimulationInterface/open-simulation-interface/blob/master/test_cases_doc.py">test_cases_doc.py</a></p></li>
 <li><p>Try and mimic the style of commit messages, and for non trivial
 commits, add an extended commit message.</p></li>
 </ul>
-<p>As per the hygiene of MRs themselves:</p>
+<p><strong>As per the hygiene of commits themselves</strong>:</p>
 <ul class="simple">
-<li><p>Give appropriate titles to the MRs, and when non-trivial add a
+<li><p>Give appropriate titles to the commits, and when non-trivial add a
 detailed motivated explanation.</p></li>
 <li><p>Give meaningful and consistent names to branches.</p></li>
 <li><p>Don’t forget to put a <code class="docutils literal notranslate"><span class="pre">WIP:</span></code> flag when it is a work in progress</p></li>
 </ul>
-<p>Our branching Workflow (member):</p>
+<p><strong>Our branching workflow summary (member)</strong>:</p>
 <ul class="simple">
-<li><p>Create issues for <strong>fundamental</strong> changes!</p></li>
+<li><p>Create issues for changes, improvements and ideas!</p></li>
 <li><p>Clone repository on your local machine</p></li>
 <li><p>Create a branch with a meaningfull name: <code class="docutils literal notranslate"><span class="pre">prefix/name</span></code>, <code class="docutils literal notranslate"><span class="pre">feature/new-environmental-conditions</span></code></p></li>
 <li><p>prefixes: feature, experimental, bug, etc.</p></li>
 <li><p>Add your suggestions to the code Do not use: <code class="docutils literal notranslate"><span class="pre">*git</span> <span class="pre">add</span> <span class="pre">-A</span> <span class="pre">*git</span> <span class="pre">commit</span> <span class="pre">-A</span></code></p></li>
-<li><p>The code should compile for a pull-request! ^_^</p></li>
+<li><p>The code should compile and pass <a class="reference external" href="https://github.com/OpenSimulationInterface/open-simulation-interface/blob/master/test_cases.py">test_cases.py</a>  for a pull-request!</p></li>
 <li><p>Try to make small changes for easier discussions</p></li>
-<li><p>The person willing to merge needs to change the InterfaceVersion according to <a class="reference internal" href="versioning.html#versioning"><span class="std std-ref">Versioning</span></a> before hitting merge</p></li>
+<li><p>The person willing to merge needs to adjust the version according to <a class="reference internal" href="versioning.html#versioning"><span class="std std-ref">Versioning</span></a> before hitting merge</p></li>
 </ul>
-<p>Our forking workflow (no member):</p>
+<p><strong>Our forking workflow summary (no member)</strong>:</p>
 <ul class="simple">
 <li><p>Create a personal fork on your account</p></li>
 <li><p>Clone to your local machine</p></li>
@@ -298,10 +306,11 @@ detailed motivated explanation.</p></li>
 <li><p>Discuss with issues and with comments in the pull-request</p></li>
 <li><p>!!! Consider becoming a member !!!</p></li>
 </ul>
-<p>Documentations changes:</p>
+<p><strong>Documentation changes</strong>:</p>
 <ul class="simple">
-<li><p>Can be performed by any member</p></li>
-<li><p>Consider adding stuff :)</p></li>
+<li><p>Can be performed by any member.</p></li>
+<li><p>Consider adding stuff to the <a class="reference external" href="https://github.com/vkresch/osi-documentation">osi-documentation</a>.</p></li>
+<li><p>When new changes are made the documentation will be rebuild and the new changes can be seen.</p></li>
 </ul>
 </div>
 <div class="section" id="code-review">
@@ -321,16 +330,11 @@ painful for everybody. The reviewer is your ally, not your enemy.</p>
 <ul class="simple">
 <li><p>Commented code: Did I remove any commented out lines?
 Did I leave a <code class="docutils literal notranslate"><span class="pre">TODO</span></code> or an old comment?</p></li>
-<li><p>Docstrings: Did I export a new message? Each exported
-message should be documented.</p></li>
 <li><p>Readability: Is the code easy to understand? Is it worth adding
 a comment to the code to explain a particular operation and its
 repercussion on the rest of the code?</p></li>
 <li><p>Variable and function names: These should be meaningful and in line
 with the convention adopted in the code base.</p></li>
-<li><p>Testing: Are the tests thoughtful? Do they cover the failure conditions? Are
-they easy to read? How fragile are they? How big are the tests?
-Are they slow?</p></li>
 <li><p>Are your Commit messages meaningful? (i.e., <a class="reference external" href="https://chris.beams.io/posts/git-commit/">https://chris.beams.io/posts/git-commit/</a> )</p></li>
 </ul>
 <p>Review your own code before calling for a peer review from a college.</p>
@@ -340,7 +344,7 @@ Are they slow?</p></li>
 <p>Code review can be challenging at times. These are suggestions and common
 pitfalls a code reviewer should avoid.</p>
 <ul class="simple">
-<li><p>Ask questions: How does this function work? If this requirement changes,
+<li><p>Ask questions: What is the purpose of this message? If this requirement changes,
 what else would have to change? How could we make this more maintainable?</p></li>
 <li><p>Discuss in person for more detailed points: Online comments are useful for
 focused technical questions. In many occasions it is more productive to
@@ -411,7 +415,7 @@ additional commits to address each comment. This incremental approach will make
 it easier for the reviewer to keep interacting till each discussion is
 resolved. When the reviewer is satisfied, he/she will mark the discussion resolved.</p>
 <p>When all discussions are resolved, the reviewer will rebase the branch,
-possibly squash commits and merge the MR in the master branch.</p>
+squash commits and merge the MR in the master branch.</p>
 </div>
 </div>
 </div>
