@@ -9,8 +9,9 @@ before_install:
 
 # Install necessary packages.
 install:
-    - pip install sphinx_rtd_theme
-    - pip install sphinx_git
+    - sudo apt-get install python3-pip
+    - sudo pip3 install sphinx_rtd_theme
+    - sudo pip3 install sphinx_git
 
 # Environment variables.
 env:
@@ -32,6 +33,7 @@ before_script:
 # Run the build script and generate documentation.
 script:
     # Debug 
+    - which python3
     - which python
     - make html
 
