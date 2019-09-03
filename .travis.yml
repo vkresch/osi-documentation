@@ -29,6 +29,8 @@ before_script:
 
 # Run the build script and generate documentation.
 script:
+    # Debug 
+    - which python
     - make html
 
 # Deploy the documentation on github (only for master branch).
