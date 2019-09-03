@@ -9,6 +9,8 @@ before_install:
 
 # Install necessary packages.
 install:
+    - pip install sphinx_rtd_theme
+    - pip install sphinx_git
 
 # Environment variables.
 env:
