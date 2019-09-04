@@ -51,6 +51,8 @@ script:
     - git clone https://github.com/OpenSimulationInterface/osi-validation.git
     - cd osi-validation
     - git checkout development
+    - git clone https://github.com/OpenSimulationInterface/open-simulation-interface.git
+    - git clone https://github.com/OpenSimulationInterface/proto2cpp.git
     - sudo python3 setup.py install
     - cd ..
     - make html
