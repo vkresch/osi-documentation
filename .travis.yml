@@ -19,6 +19,11 @@ install:
         PROTOBUF_URL="https://github.com/google/protobuf/releases/download/v3.2.0/protobuf-cpp-3.2.0.tar.gz"
         if [ ! -f ${DEPS_DIR}/protobuf/install/bin/protoc ] ; then mkdir -p protobuf ; travis_retry wget --no-check-certificate --quiet -O - ${PROTOBUF_URL} | tar --strip-components=1 -xz -C protobuf ; cd protobuf ; ./configure --prefix=${DEPS_DIR}/protobuf/install ; make ; make install ; fi
         export PATH=${DEPS_DIR}/protobuf/install/bin:${PATH}
+
+    # Install proto2cpp for doxygen
+    - |
+        PROTO2CPP_URL="https://github.com/OpenSimulationInterface/proto2cpp.git"
+        if [ ! -f ${DEPS_DIR}/proto2cpp ] ; then mkdir -p proto2cpp ; git clone ${PROTO2CPP_URL} ${DEPS_DIR}/proto2cpp ; fi
         
     - sudo apt-get install python3-pip
     - sudo pip3 install sphinx_rtd_theme
