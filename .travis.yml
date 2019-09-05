@@ -1,6 +1,8 @@
 # Use distribution Ubuntu 18.04 Bionic
 dist: bionic
 
+language: python
+
 # Handle dependencies in separate directory.
 before_install:
     - DEPS_DIR="${HOME}/deps"
@@ -26,8 +28,8 @@ install:
         if [ ! -f ${DEPS_DIR}/proto2cpp ] ; then mkdir -p proto2cpp ; git clone ${PROTO2CPP_URL} ${DEPS_DIR}/proto2cpp ; fi
         
     - sudo apt-get install python3-pip
-    - sudo pip3 install sphinx_rtd_theme
-    - sudo pip3 install sphinx_git
+    - pip install sphinx_rtd_theme
+    - pip install sphinx_git
     - sudo apt-get install protobuf-compiler
 
 # Environment variables.
@@ -55,10 +57,10 @@ script:
     - git clone https://github.com/OpenSimulationInterface/open-simulation-interface.git
     - git clone https://github.com/OpenSimulationInterface/proto2cpp.git
     - cd open-simulation-interface
-    - sudo pip3 install .
+    - pip install .
     - cd ..
-    - sudo pip3 install -r requirements.txt
-    - sudo pip3 install .
+    - pip install .
+    - cd ..
     - make html
 
 # Deploy the documentation on github (only for master branch).
