@@ -55,10 +55,10 @@ script:
     - git clone https://github.com/OpenSimulationInterface/open-simulation-interface.git
     - git clone https://github.com/OpenSimulationInterface/proto2cpp.git
     - cd open-simulation-interface
-    - sudo pip install .
+    - sudo pip3 install .
     - cd ..
-    - sudo pip install -r requirements.txt
-    - sudo pip install .
+    - sudo pip3 install -r requirements.txt
+    - sudo pip3 install .
     - make html
 
 # Deploy the documentation on github (only for master branch).
