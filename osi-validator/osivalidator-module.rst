@@ -16,6 +16,7 @@ The basic requirements for OSI 3 are gathered in the
 
    setup
    usage
+   rules
    writing-rules
    osivalidator
    
