@@ -6,6 +6,13 @@ language: python
 python:
     - "3.6"
 
+# Cache dependencies to speed up the build.
+cache:
+    directories:
+        - ${HOME}/deps/cmake
+        - ${HOME}/deps/protobuf
+#        - ${HOME}/deps/proto2cpp
+
 # Handle dependencies in separate directory.
 before_install:
     - DEPS_DIR="${HOME}/deps"
@@ -25,7 +32,7 @@ install:
         PROTO2CPP_URL="https://github.com/OpenSimulationInterface/proto2cpp.git"
         if [ ! -f ${DEPS_DIR}/proto2cpp ] ; then mkdir -p proto2cpp ; git clone ${PROTO2CPP_URL} ${DEPS_DIR}/proto2cpp ; fi
         
-    - sudo apt-get install python3-pip libprotobuf-dev protobuf-compiler libenchant1c2a doxygen doxygen-doc doxygen-latex doxygen-gui graphviz
+    - sudo apt-get install cmake python3-pip libprotobuf-dev protobuf-compiler libenchant1c2a doxygen doxygen-doc doxygen-latex doxygen-gui graphviz
     - pip install sphinx_rtd_theme
     - pip install sphinx_git
     - pip install sphinxcontrib.spelling
