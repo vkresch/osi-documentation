@@ -1,7 +1,7 @@
 .. _how-to-contribute:
 
-How to contribute
-===================
+Contributors' Guidelines
+=========================
 
 Introduction
 ------------
@@ -18,13 +18,12 @@ find with the project on `github <https://github.com/OpenSimulationInterface/ope
 Always make sure to search the existing issues before reporting a new one.
 Issues may be created to discuss:
 
-- Problems
-- Bugs
-- Feature requests
-- Ideas
-- I am sad :( -> please help me :)
+- `Feature requests or Ideas <https://github.com/OpenSimulationInterface/open-simulation-interface/issues/new?assignees=&labels=feature+request&template=feature_request.md&title=>`_
+- `Bugs <https://github.com/OpenSimulationInterface/open-simulation-interface/issues/new?assignees=&labels=bug&template=bug_report.md&title=>`_
+- `Questions <https://github.com/OpenSimulationInterface/open-simulation-interface/issues/new?assignees=&labels=question&template=question.md&title=>`_
+- `Other <https://github.com/OpenSimulationInterface/open-simulation-interface/issues/new>`_
 
-If practicable issues should be closed by a referenced pull request or commit `here <https://help.github.com/en/articles/closing-issues-using-keywords>`_ you can find keywords to close issues automatically).
+If practicable issues should be closed by a referenced pull request or commit (`here <https://help.github.com/en/articles/closing-issues-using-keywords>`_ you can find keywords to close issues automatically). To help developers and maintainers we provide a `pull request template <https://github.com/OpenSimulationInterface/open-simulation-interface/blob/master/.github/pull_request_template.md>`_ which will be generated each time you create a new pull request.
 
 First steps
 -----------
@@ -37,7 +36,7 @@ Download and install the protocol buffer on your computer, pick up your favorite
 It is a good idea to read the `tutorials <https://developers.google.com/protocol-buffers/docs/tutorials>`_ for that in your favorite programming language.
 
 For contribution you also need be proficient in Git. You can download and read the book Pro Git by Scott Chacon and Ben Straub `here <https://link.springer.com/book/10.1007%2F978-1-4842-0076-6>`_ for free.
-Learn `how to fork a repository <https://help.github.com/en/articles/fork-a-repo#platform-linux>`_ and follow the suggested `fork workflow <https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow>`_ by Atlassian.
+Learn `how to fork a repository <https://help.github.com/en/articles/fork-a-repo>`_ and follow the suggested `fork workflow <https://www.atlassian.com/git/tutorials/comparing-workflows>`_ by Atlassian.
 Become a github guru :).
 
 Where to start
@@ -76,13 +75,13 @@ maintain a streamlined Git history.
 
 -  Prefer small atomic commits over a large one that do many things.
 -  Don’t mix refactoring and new features.
--  Never mix reindentation, whitespace deletion, or other style changes
+-  Never mix re indentation, whitespace deletion, or other style changes
    with actual code changes.
 -  If you add new osi messages into a \*.proto file, don’t forget to
    extend the documentation and comment on the message and on each field (for more information see :ref:`commenting`).
 -  Don't forget to run 
    `test_cases.py <https://github.com/OpenSimulationInterface/open-simulation-interface/blob/master/test_cases.py>`_ to check if you followed the correct syntax guidelines for \*.proto files
--  If you rebuild the doyxgen documentation run `test_cases_doc.py <https://github.com/OpenSimulationInterface/open-simulation-interface/blob/master/test_cases_doc.py>`_
+-  If you rebuild the doxygen documentation run `test_cases_doc.py <https://github.com/OpenSimulationInterface/open-simulation-interface/blob/master/test_cases_doc.py>`_
 -  Try and mimic the style of commit messages, and for non trivial
    commits, add an extended commit message.
 
@@ -98,7 +97,7 @@ maintain a streamlined Git history.
 
 - Create issues for changes, improvements and ideas!
 - Clone repository on your local machine
-- Create a branch with a meaningfull name: ``prefix/name``, ``feature/new-environmental-conditions``
+- Create a branch with a meaningful name: ``prefix/name``, ``feature/new-environmental-conditions``
 - prefixes: feature, experimental, bug, etc.
 - Add your suggestions to the code Do not use: ``*git add -A *git commit -A``
 - The code should compile and pass `test_cases.py <https://github.com/OpenSimulationInterface/open-simulation-interface/blob/master/test_cases.py>`_  for a pull-request!
@@ -198,7 +197,7 @@ pitfalls a code reviewer should avoid.
 - Consider the person you are reviewing: Each developer is a person. If you
   know the person, consider their personality and experience while reviewing their
   code. Sometime it is possible with somebody to be more direct and terse, while
-  other people require a more thorough explaination.
+  other people require a more thorough explanation.
 
 - Avoid confrontational and authoritative language: The way we communicate has
   an impact on the receiver. If communicating a problem in the code or a
