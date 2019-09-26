@@ -53,13 +53,6 @@ osivalidator.osi\_rules\_checker module
    :undoc-members:
    :show-inheritance:
 
-osivalidator.osi\_rules\_implementations module
------------------------------------------------
-
-.. automodule:: osivalidator.osi_rules_implementations
-   :members:
-   :undoc-members:
-   :show-inheritance:
 
 osivalidator.osi\_scenario module
 ---------------------------------

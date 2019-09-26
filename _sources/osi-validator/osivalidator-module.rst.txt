@@ -15,6 +15,7 @@ The OSI Validator is a validation framework for the field values of OSI messages
 
    setup
    usage
+   rules
    writing-rules
    osivalidator
    

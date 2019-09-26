@@ -25,7 +25,10 @@
         <script type="text/javascript" src="../_static/underscore.js"></script>
         <script type="text/javascript" src="../_static/doctools.js"></script>
         <script type="text/javascript" src="../_static/language_data.js"></script>
+<<<<<<< HEAD
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+=======
+>>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -215,6 +218,28 @@ to read old files&quot; All files that have been recorded in the past with a
 specific major version are FAITHFULLY valid with all combinations of
 higher minor and patch versions of the same major version.</p>
 </div>
+<<<<<<< HEAD
+=======
+<div class="section" id="fault-injection-how-to">
+<h2>Fault injection: how-to<a class="headerlink" href="#fault-injection-how-to" title="Permalink to this headline">¶</a></h2>
+<p>Injection of pre-defined sensor errors should be handled by a
+specialized “fault injector” component that acts like a sensor model
+component, i.e. it takes a SensorData message as input and returns a
+modified SensorData message as output. Specific errors should be handled
+as follows:</p>
+<ul class="simple">
+<li><p>Ghost objects / false positive: An additional SensorDataObject is
+added to the list of objects in SensorData.object with
+SensorDataObject.model_internal_object.ground_truth_type set to
+kTypeGhost.</p></li>
+<li><p>False negative: The object is marked as not seen by the sensor by
+setting the property SensorDataObject.model_internal_object.is_seen
+to false. The implementation of field-of-view calculation modules
+should respect this flag and never reset an object marked as not-seen
+to seen.</p></li>
+</ul>
+</div>
+>>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <div class="section" id="proto3-support">
 <h2>Proto3 Support<a class="headerlink" href="#proto3-support" title="Permalink to this headline">¶</a></h2>
 <p>For users that need to use proto3 syntax, for example because the
@@ -230,6 +255,32 @@ remaining compatible between proto2 and proto3 libraries.</p>
 Functional Mock-up Units (FMUs) for use in simulation environments is
 available <a class="reference external" href="https://github.com/OpenSimulationInterface/osi-sensor-model-packaging">here</a>.</p>
 </div>
+<<<<<<< HEAD
+=======
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>The actual documentation of the GitHub master branch is <a class="reference external" href="https://opensimulationinterface.github.io/open-simulation-interface/">online</a>
+available.</p>
+<p>Detailed information about installation and usage of OSI can be found in
+the <a class="reference external" href="https://github.com/OpenSimulationInterface/open-simulation-interface/wiki">Wiki</a></p>
+<p>In order to generate the doxygen documentation for OSI, please follow
+the following steps:</p>
+<ol class="arabic simple">
+<li><p>Install <a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/download.html">Doxygen</a>, set an environmental variable ‘doxygen’ with the
+path to the binary file and add it to the PATH variable:
+<code class="docutils literal notranslate"><span class="pre">PATH</span> <span class="pre">+=</span> <span class="pre">%doxygen%</span></code>.</p></li>
+<li><p>Download the <a class="reference external" href="https://github.com/OpenSimulationInterface/proto2cpp">proto2cpp</a> repo. Copy the content of the repo
+proto2cpp to your desired <code class="docutils literal notranslate"><span class="pre">&lt;path-to-proto2cpp.py&gt;</span></code></p></li>
+<li><p>Install <a class="reference external" href="https://graphviz.gitlab.io/_pages/Download/Download_windows.html">graphviz</a>, set an environmental variable ‘graphviz’ with
+the path to the binary file and add it to the PATH variable:
+<code class="docutils literal notranslate"><span class="pre">PATH</span> <span class="pre">+=</span> <span class="pre">%graphviz%</span></code>.</p></li>
+<li><p>From the cmd navigate to the build directory and run:
+<code class="docutils literal notranslate"><span class="pre">cmd</span> <span class="pre">cmake</span> <span class="pre">-DFILTER_PROTO2CPP_PY_PATH=&lt;path-to-proto2cpp.py&gt;</span> <span class="pre">&lt;path-to-CMakeLists.txt&gt;</span></code></p></li>
+<li><p>The build process will then generate the doxygen documentation under
+the directory doc.</p></li>
+</ol>
+</div>
+>>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <div class="section" id="citing">
 <h2>Citing<a class="headerlink" href="#citing" title="Permalink to this headline">¶</a></h2>
 <p>Use the following citation for referencing the OSI interface in your

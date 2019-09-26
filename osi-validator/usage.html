@@ -25,7 +25,10 @@
         <script type="text/javascript" src="../_static/underscore.js"></script>
         <script type="text/javascript" src="../_static/doctools.js"></script>
         <script type="text/javascript" src="../_static/language_data.js"></script>
+<<<<<<< HEAD
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+=======
+>>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -36,7 +39,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="How to write rules" href="writing-rules.html" />
+    <link rel="next" title="Rules" href="rules.html" />
     <link rel="prev" title="Installation Guide" href="setup.html" /> 
 </head>
 
@@ -101,6 +104,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="writing-rules.html">How to write rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="osivalidator.html">osivalidator package</a></li>
 </ul>
@@ -211,7 +215,11 @@ optional arguments:
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>osivalidator --data osi_message_data/osi_message_test.txt
 </pre></div>
 </div>
+<<<<<<< HEAD
 <p>After successfully running the validation the following output is generated:</p>
+=======
+<p>After sucessfully running the validation the following output is generated:</p>
+>>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Instanciate logger
 Read data
 Retrieving message offsets in scenario file until inf...
@@ -265,7 +273,11 @@ Ranges of timestamps    Message
 [0, 260]                SensorView.global_ground_truth.is_valid(None) does not comply in SensorView.global_ground_truth
 </pre></div>
 </div>
+<<<<<<< HEAD
 <p>The Output is a report of how many errors (here 27) and warnings (here 5) were found in the osi-message according to the defined rules. The rules can be found under the tag <code class="docutils literal notranslate"><span class="pre">\rules</span></code> in the *.proto files from the <a class="reference external" href="https://github.com/OpenSimulationInterface/open-simulation-interface">osi github</a> or in the <a class="reference external" href="https://github.com/OpenSimulationInterface/osi-validation/tree/master/requirements-osi-3">requirements folder</a> from osi-validation as *.yml files (for more information see <a class="reference internal" href="../osi/commenting.html#commenting"><span class="std std-ref">Commenting</span></a>).  Currently an error is thrown when a field is not set. A warning is thrown when a field is set but do not comply with the defined rules. For each error and warning there is a description on which timestamp it was found, the path to the rule and the path to the osi-message. The general format is:</p>
+=======
+<p>The Output is a report of how many errors (here 27) and warnings (here 5) were found in the osi-message according to the defined rules. The rules can be found under the tag <code class="docutils literal notranslate"><span class="pre">\rules</span></code> in the *.proto files from the <a class="reference external" href="https://github.com/OpenSimulationInterface/open-simulation-interface">osi github</a> or in the <a class="reference external" href="https://github.com/OpenSimulationInterface/osi-validation/tree/development/requirements-osi-3">requirements folder</a> from osi-validation as *.yml files (for more information see <a class="reference internal" href="../osi/commenting.html#commenting-with-rules"><span class="std std-ref">Commenting on fields with rules</span></a>).  Currently an error is thrown when a field is not set. A warning is thrown when a field is set but do not comply with the defined rules. For each error and warning there is a description on which timestamp it was found, the path to the rule and the path to the osi-message. The general format is:</p>
+>>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Errors (NUMBER_ERRORS)
 Ranges of timestamps                Message
 --------------------------------    --------------------------------------------------------
@@ -288,7 +300,7 @@ Ranges of timestamps    Message
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="writing-rules.html" class="btn btn-neutral float-right" title="How to write rules" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="rules.html" class="btn btn-neutral float-right" title="Rules" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="setup.html" class="btn btn-neutral float-left" title="Installation Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
