@@ -5,6 +5,7 @@ import sys
 import sphinxcontrib.spelling
 # sys.path.insert(0, os.path.abspath('.'))
 sys.path.append('/home/travis/build/osi-documentation/osi-validation')
+sys.path.append('/home/travis/build/osi-documentation/breathe')
 
 # -- Project information -----------------------------------------------------
 
@@ -33,8 +34,11 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
-    'sphinxcontrib.spelling'
+    'sphinxcontrib.spelling',
+    'breathe'
 ]
+
+breathe_projects = { "open-simulation-interface": "/home/travis/build/osi-documentation/open-simulation-interface/doc/xml" }
 
 # Show spelling suggestions
 spelling_show_suggestions = True
