@@ -79,7 +79,7 @@ script:
     - cd build
     - cmake -D CMAKE_PREFIX_PATH:PATH=${DEPS_DIR}/protobuf/install -D CMAKE_INSTALL_PREFIX:PATH=${TESTINST_DIR} ..
     - make
-    - echo "GENERATE_XML = YES" >> Doyxfile
+    - echo "GENERATE_XML = YES" >> Doxyfile
     - doxygen
     - cd ../..
     - pip install .    
