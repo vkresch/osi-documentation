@@ -4,8 +4,8 @@ import os
 import sys
 import sphinxcontrib.spelling
 # sys.path.insert(0, os.path.abspath('.'))
-sys.path.append('/home/travis/build/osi-documentation/osi-validation')
-sys.path.append('/home/travis/build/osi-documentation/breathe')
+sys.path.append('/home/travis/build/vkresch/osi-documentation/osi-validation')
+sys.path.append('/home/travis/build/vkresch/osi-documentation/breathe')
 
 # -- Project information -----------------------------------------------------
 
@@ -38,7 +38,7 @@ extensions = [
     'breathe'
 ]
 
-breathe_projects = { "open-simulation-interface": "/home/travis/build/osi-documentation/osi-validation/open-simulation-interface/doc/xml" }
+breathe_projects = { "open-simulation-interface": "/home/travis/build/vkresch/osi-documentation/osi-validation/open-simulation-interface/doc/xml" }
 
 # Show spelling suggestions
 spelling_show_suggestions = True
