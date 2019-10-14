@@ -88,10 +88,10 @@ script:
     - cd ..
 
     # Check spelling mistakes
-    - make spelling
+    # - make spelling
 
     # Check if all links are working
-    - make linkcheck
+    # - make linkcheck
 
     # Build the html pages
     - make html
