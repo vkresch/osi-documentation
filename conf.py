@@ -80,7 +80,8 @@ exclude_patterns = ['_build',
                     'osi-validation/open-simulation-interface',
                     'osi-validation/proto2cpp',
                     'osi-validation/README.md',
-                    'osi-validation/.github']
+                    'osi-validation/.github',
+                    'breathe/*']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
