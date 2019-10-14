@@ -38,7 +38,7 @@ extensions = [
     'breathe'
 ]
 
-breathe_projects = { "open-simulation-interface": "/home/travis/build/osi-documentation/open-simulation-interface/doc/xml" }
+breathe_projects = { "open-simulation-interface": "/home/travis/build/osi-documentation/osi-validation/open-simulation-interface/doc/xml" }
 
 # Show spelling suggestions
 spelling_show_suggestions = True
@@ -80,8 +80,7 @@ exclude_patterns = ['_build',
                     'osi-validation/open-simulation-interface',
                     'osi-validation/proto2cpp',
                     'osi-validation/README.md',
-                    'osi-validation/.github',
-                    'breathe']
+                    'osi-validation/.github']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
