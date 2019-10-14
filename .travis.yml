@@ -86,6 +86,7 @@ script:
     - cd ../..
     - pip install .    
     - cd ..
+    - cp osi-validation/open-simulation-interface/doc/images/* osi-validation/open-simulation-interface/doc/xml/*
 
     # Check spelling mistakes
     # - make spelling
