@@ -1,4 +1,0 @@
-{
-    "python.pythonPath": "vpython/bin/python3.6",
-    "restructuredtext.confPath": "${workspaceFolder}"
-}

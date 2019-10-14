@@ -25,10 +25,7 @@
         <script type="text/javascript" src="../_static/underscore.js"></script>
         <script type="text/javascript" src="../_static/doctools.js"></script>
         <script type="text/javascript" src="../_static/language_data.js"></script>
-<<<<<<< HEAD
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-=======
->>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -40,7 +37,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Installation" href="installation.html" />
-    <link rel="prev" title="Welcome to Open Simulation Interface&#39;s documentation!" href="../index.html" /> 
+    <link rel="prev" title="Welcome to Open Simulation Interface’s documentation!" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -101,19 +98,19 @@
 <li class="toctree-l1"><a class="reference internal" href="commenting.html">Commenting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="versioning.html">Versioning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">Releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howtocontribute.html">Contributors' Guidelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference.html">OSI API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howtocontribute.html">Contributors’ Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">OSI Reference</a></li>
 </ul>
 <p class="caption"><span class="caption-text">OSI Validation:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../osi-validator/osivalidator-module.html">OSI Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../osi-validator/howtocontribute.html">Contributors' Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osi-validator/howtocontribute.html">Contributors’ Guidelines</a></li>
 </ul>
 <p class="caption"><span class="caption-text">OSI Visualizer:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../osi-visualizer/README.html">OSI Visualizer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../osi-visualizer/nvidia-docker.html">Nvidia Docker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../osi-visualizer/howtocontribute.html">Contributors' Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osi-visualizer/howtocontribute.html">Contributors’ Guidelines</a></li>
 </ul>
 <p class="caption"><span class="caption-text">OSI Model Packaging:</span></p>
 <ul>
@@ -204,42 +201,20 @@ specific meaning as indicated in the accompanying comment.</p>
 </div>
 <div class="section" id="compatibility">
 <h2>Compatibility<a class="headerlink" href="#compatibility" title="Permalink to this headline">¶</a></h2>
-<p>Definition: FAITHFULLY &quot;All recorded data is correctly interpreted by
-the interface&quot;</p>
-<p>Forward compatibility: Definition: &quot;An older version of the code can be
-used to read new files&quot; Data recorded with a higher minor or patch
+<p>Definition: FAITHFULLY “All recorded data is correctly interpreted by
+the interface”</p>
+<p>Forward compatibility: Definition: “An older version of the code can be
+used to read new files” Data recorded with a higher minor or patch
 version can be interpreted by code built using the same major version of
 the interface but lower minor and/or patch version. In this case,
 additional fields of a newer minor version are silently ignored. All
 patch versions of the same major and minor version are FAITHFULLY
 forward compatible.</p>
-<p>Backward compatibility: Definition: &quot;A newer version of code can be used
-to read old files&quot; All files that have been recorded in the past with a
+<p>Backward compatibility: Definition: “A newer version of code can be used
+to read old files” All files that have been recorded in the past with a
 specific major version are FAITHFULLY valid with all combinations of
 higher minor and patch versions of the same major version.</p>
 </div>
-<<<<<<< HEAD
-=======
-<div class="section" id="fault-injection-how-to">
-<h2>Fault injection: how-to<a class="headerlink" href="#fault-injection-how-to" title="Permalink to this headline">¶</a></h2>
-<p>Injection of pre-defined sensor errors should be handled by a
-specialized “fault injector” component that acts like a sensor model
-component, i.e. it takes a SensorData message as input and returns a
-modified SensorData message as output. Specific errors should be handled
-as follows:</p>
-<ul class="simple">
-<li><p>Ghost objects / false positive: An additional SensorDataObject is
-added to the list of objects in SensorData.object with
-SensorDataObject.model_internal_object.ground_truth_type set to
-kTypeGhost.</p></li>
-<li><p>False negative: The object is marked as not seen by the sensor by
-setting the property SensorDataObject.model_internal_object.is_seen
-to false. The implementation of field-of-view calculation modules
-should respect this flag and never reset an object marked as not-seen
-to seen.</p></li>
-</ul>
-</div>
->>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <div class="section" id="proto3-support">
 <h2>Proto3 Support<a class="headerlink" href="#proto3-support" title="Permalink to this headline">¶</a></h2>
 <p>For users that need to use proto3 syntax, for example because the
@@ -255,32 +230,6 @@ remaining compatible between proto2 and proto3 libraries.</p>
 Functional Mock-up Units (FMUs) for use in simulation environments is
 available <a class="reference external" href="https://github.com/OpenSimulationInterface/osi-sensor-model-packaging">here</a>.</p>
 </div>
-<<<<<<< HEAD
-=======
-<div class="section" id="documentation">
-<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
-<p>The actual documentation of the GitHub master branch is <a class="reference external" href="https://opensimulationinterface.github.io/open-simulation-interface/">online</a>
-available.</p>
-<p>Detailed information about installation and usage of OSI can be found in
-the <a class="reference external" href="https://github.com/OpenSimulationInterface/open-simulation-interface/wiki">Wiki</a></p>
-<p>In order to generate the doxygen documentation for OSI, please follow
-the following steps:</p>
-<ol class="arabic simple">
-<li><p>Install <a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/download.html">Doxygen</a>, set an environmental variable ‘doxygen’ with the
-path to the binary file and add it to the PATH variable:
-<code class="docutils literal notranslate"><span class="pre">PATH</span> <span class="pre">+=</span> <span class="pre">%doxygen%</span></code>.</p></li>
-<li><p>Download the <a class="reference external" href="https://github.com/OpenSimulationInterface/proto2cpp">proto2cpp</a> repo. Copy the content of the repo
-proto2cpp to your desired <code class="docutils literal notranslate"><span class="pre">&lt;path-to-proto2cpp.py&gt;</span></code></p></li>
-<li><p>Install <a class="reference external" href="https://graphviz.gitlab.io/_pages/Download/Download_windows.html">graphviz</a>, set an environmental variable ‘graphviz’ with
-the path to the binary file and add it to the PATH variable:
-<code class="docutils literal notranslate"><span class="pre">PATH</span> <span class="pre">+=</span> <span class="pre">%graphviz%</span></code>.</p></li>
-<li><p>From the cmd navigate to the build directory and run:
-<code class="docutils literal notranslate"><span class="pre">cmd</span> <span class="pre">cmake</span> <span class="pre">-DFILTER_PROTO2CPP_PY_PATH=&lt;path-to-proto2cpp.py&gt;</span> <span class="pre">&lt;path-to-CMakeLists.txt&gt;</span></code></p></li>
-<li><p>The build process will then generate the doxygen documentation under
-the directory doc.</p></li>
-</ol>
-</div>
->>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <div class="section" id="citing">
 <h2>Citing<a class="headerlink" href="#citing" title="Permalink to this headline">¶</a></h2>
 <p>Use the following citation for referencing the OSI interface in your
@@ -309,7 +258,7 @@ note = <span class="nb">{{</span>Accessed: 2017-08-28<span class="nb">}}</span> 
         <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Open Simulation Interface&#39;s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Open Simulation Interface’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

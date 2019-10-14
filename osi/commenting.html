@@ -25,10 +25,7 @@
         <script type="text/javascript" src="../_static/underscore.js"></script>
         <script type="text/javascript" src="../_static/doctools.js"></script>
         <script type="text/javascript" src="../_static/language_data.js"></script>
-<<<<<<< HEAD
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-=======
->>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -101,19 +98,19 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="versioning.html">Versioning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">Releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howtocontribute.html">Contributors' Guidelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference.html">OSI API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howtocontribute.html">Contributors’ Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">OSI Reference</a></li>
 </ul>
 <p class="caption"><span class="caption-text">OSI Validation:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../osi-validator/osivalidator-module.html">OSI Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../osi-validator/howtocontribute.html">Contributors' Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osi-validator/howtocontribute.html">Contributors’ Guidelines</a></li>
 </ul>
 <p class="caption"><span class="caption-text">OSI Visualizer:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../osi-visualizer/README.html">OSI Visualizer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../osi-visualizer/nvidia-docker.html">Nvidia Docker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../osi-visualizer/howtocontribute.html">Contributors' Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osi-visualizer/howtocontribute.html">Contributors’ Guidelines</a></li>
 </ul>
 <p class="caption"><span class="caption-text">OSI Model Packaging:</span></p>
 <ul>
@@ -189,11 +186,7 @@
 <p>For any additional comment styles see <a class="reference external" href="http://www.doxygen.nl/manual/commands.html">list</a> of doxygen commands.</p>
 <div class="section" id="commenting-with-block-syntax">
 <h2>Commenting with block syntax<a class="headerlink" href="#commenting-with-block-syntax" title="Permalink to this headline">¶</a></h2>
-<<<<<<< HEAD
 <p>Start every comment with <code class="docutils literal notranslate"><span class="pre">//</span></code> and do not use <code class="docutils literal notranslate"><span class="pre">///</span></code>.</p>
-=======
-<p>Please start every comment with <code class="docutils literal notranslate"><span class="pre">//</span></code> and do not use <code class="docutils literal notranslate"><span class="pre">///</span></code>.</p>
->>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 </div>
 <div class="section" id="commenting-on-messages">
 <h2>Commenting on messages<a class="headerlink" href="#commenting-on-messages" title="Permalink to this headline">¶</a></h2>
@@ -274,7 +267,6 @@ However to keep the style of the documentation coherent there should not be any 
 </div>
 <div class="section" id="commenting-on-fields-and-enums">
 <h2>Commenting on fields and enums<a class="headerlink" href="#commenting-on-fields-and-enums" title="Permalink to this headline">¶</a></h2>
-<<<<<<< HEAD
 <p>The commenting for fields and enums follows the following order:</p>
 <ol class="arabic simple">
 <li><p>Explanation</p></li>
@@ -285,11 +277,6 @@ However to keep the style of the documentation coherent there should not be any 
 </ol>
 <p>First you add a field into a message with an appropriate index number.</p>
 <div class="highlight-protobuf notranslate"><div class="highlight"><pre><span></span><span class="c1">// \brief The conditions of the environment.</span>
-=======
-<p>Doxygen will interpret a comment consisting just of one single line as a brief description.
-However to keep the style of the documentation coherent there should not be any brief description when commenting on fields and enums. That is why adding one more empty line when commenting just one line becomes necessary.</p>
-<div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// &lt;Add your single line comment like this&gt;</span>
->>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <span class="c1">//</span>
 <span class="c1">// \image html EnvironmentalConditions.svg</span>
 <span class="c1">//</span>
@@ -303,7 +290,6 @@ However to keep the style of the documentation coherent there should not be any 
 <span class="p">}</span>
 </pre></div>
 </div>
-<<<<<<< HEAD
 <p>Then you describe the field by adding an explanation.</p>
 <div class="highlight-protobuf notranslate"><div class="highlight"><pre><span></span><span class="c1">// \brief The conditions of the environment.</span>
 <span class="c1">//</span>
@@ -314,12 +300,6 @@ However to keep the style of the documentation coherent there should not be any 
 <span class="c1">// \note These conditions apply locally around the host vehicle.</span>
 <span class="c1">//</span>
 <span class="kd">message</span> <span class="nc">EnvironmentalConditions</span>
-=======
-<p>There is no need for an extra empty line if you are commenting more than one line anyways.</p>
-<div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// &lt;If you write two or more lines of comments...&gt;</span>
-<span class="c1">// &lt;... you do not need to add an empty line&gt;</span>
-<span class="kd">message</span> <span class="nc">ExampleMessage</span>
->>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <span class="p">{</span>
     <span class="c1">// Atmospheric pressure in Pascal at z=0.0 in world frame (about 101325 [Pa]).</span>
     <span class="c1">//</span>
@@ -346,15 +326,8 @@ However to keep the style of the documentation coherent there should not be any 
 <span class="p">}</span>
 </pre></div>
 </div>
-<<<<<<< HEAD
 <p>You can optionally add a note to the field to describe the field better.</p>
 <div class="highlight-protobuf notranslate"><div class="highlight"><pre><span></span><span class="c1">// \brief The conditions of the environment.</span>
-=======
-<div class="section" id="commenting-on-fields-with-rules">
-<span id="commenting-with-rules"></span><h2>Commenting on fields with rules<a class="headerlink" href="#commenting-on-fields-with-rules" title="Permalink to this headline">¶</a></h2>
-<p>When adding rules to *.proto files make sure that the rules are encapsulated between the <code class="docutils literal notranslate"><span class="pre">\rules</span></code> and <code class="docutils literal notranslate"><span class="pre">\endrules</span></code> tags. The rule <code class="docutils literal notranslate"><span class="pre">is_set</span></code> needs always to be provided.</p>
-<div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// Description ExampleMessage</span>
->>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <span class="c1">//</span>
 <span class="c1">// \image html EnvironmentalConditions.svg</span>
 <span class="c1">//</span>
@@ -428,11 +401,7 @@ However to keep the style of the documentation coherent there should not be any 
 <span class="p">}</span>
 </pre></div>
 </div>
-<<<<<<< HEAD
 <p>The rule definition must follow the syntax which is defined by a regex search which you can see below:</p>
-=======
-<p>The rule defintion must follow the syntax which is defined by a regex search which you can see below:</p>
->>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;is_greater_than&#39;</span><span class="p">:</span>              <span class="sa">r</span><span class="s1">&#39;\b(is_greater_than)\b: \d+(\.\d+)?&#39;</span>                                                   <span class="c1"># is_greater_than: 1</span>
 <span class="s1">&#39;is_greater_than_or_equal_to&#39;</span><span class="p">:</span>  <span class="sa">r</span><span class="s1">&#39;\b(is_greater_than_or_equal_to)\b: \d+(\.\d+)?&#39;</span>                                       <span class="c1"># is_greater_than_or_equal_to: 1</span>
 <span class="s1">&#39;is_less_than_or_equal_to&#39;</span><span class="p">:</span>     <span class="sa">r</span><span class="s1">&#39;\b(is_less_than_or_equal_to)\b: \d+(\.\d+)?&#39;</span>                                          <span class="c1"># is_less_than_or_equal_to: 10</span>
@@ -452,21 +421,12 @@ However to keep the style of the documentation coherent there should not be any 
 </div>
 <div class="section" id="commenting-with-doxygen-references">
 <h2>Commenting with doxygen references<a class="headerlink" href="#commenting-with-doxygen-references" title="Permalink to this headline">¶</a></h2>
-<<<<<<< HEAD
-<p>If you need to reference to another message etc., you can achieve that by just using the exact same name of this message (upper and lower case sensitive) in your comment and put 'c' in front of the message name.</p>
-<div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// A reference to \c GroundTruth message.</span>
-</pre></div>
-</div>
-<p>If you want to reference a nested message, use '::' instead of '.' as separators in comments.</p>
-<p>If you want to reference message fields and enums add '#' to the enum/field name.</p>
-=======
 <p>If you need to reference to another message etc., you can achieve that by just using the exact same name of this message (upper and lower case sensitive) in your comment and put ‘c’ in front of the message name.</p>
 <div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// A reference to \c GroundTruth message.</span>
 </pre></div>
 </div>
 <p>If you want to reference a nested message, use ‘::’ instead of ‘.’ as separators in comments.</p>
 <p>If you want to reference message fields and enums add ‘#’ to the enum/field name.</p>
->>>>>>> 70886b369f89122848fdecf6dff03502d541d1d5
 <div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// A reference to a enum e.g. \c #COLOR_GREEN.</span>
 </pre></div>
 </div>
