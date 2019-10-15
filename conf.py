@@ -53,9 +53,9 @@ exhale_args = {
     # Suggested optional arguments
     "createTreeView":        True,
     "afterTitleDescription": textwrap.dedent('''
-       .. WARNING::
+    .. WARNING::
 
-       Currently this reference is work in progress to port the doxygen 
+       Currently this reference is **work in progress** to port the doxygen 
        documentation completely to the sphinx documentation. 
        For the official reference see the current 
        `OSI reference documentation <https://opensimulationinterface.github.io/open-simulation-interface/annotated.html>`_.
