@@ -3,6 +3,7 @@
 import os
 import sys
 import sphinxcontrib.spelling
+import textwrap
 # sys.path.insert(0, os.path.abspath('.'))
 sys.path.append('/home/travis/build/vkresch/osi-documentation/osi-validation')
 sys.path.append('/home/travis/build/vkresch/osi-documentation/breathe')
