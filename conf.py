@@ -35,10 +35,28 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinxcontrib.spelling',
-    'breathe'
+    'breathe',
+    'exhale'
 ]
 
 breathe_projects = { "open-simulation-interface": "/home/travis/build/vkresch/osi-documentation/osi-validation/open-simulation-interface/doc/xml" }
+breathe_default_project = "open-simulation-interface"
+
+# Setup the exhale extension
+exhale_args = {
+    # These arguments are required
+    "containmentFolder":     "./api",
+    "rootFileName":          "library_root.rst",
+    "rootFileTitle":         "Library API",
+    "doxygenStripFromPath":  "..",
+    # Suggested optional arguments
+    "createTreeView":        True,
+    # TIP: if using the sphinx-bootstrap-theme, you need
+    # "treeViewIsBootstrap": True,
+    # "exhaleExecutesDoxygen": False,
+    # "exhaleDoxygenStdin":    "INPUT = /home/vkreschenski/Documents/Projects/osi-documentation/open-simulation-interface"
+}
+
 
 # Show spelling suggestions
 spelling_show_suggestions = True
