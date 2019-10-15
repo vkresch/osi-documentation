@@ -50,6 +50,7 @@ The authors' vision is to be able to connect any automated driving function to a
    osi/releases
    osi/howtocontribute
    osi/reference
+   api/library_root
 
 .. toctree::
     :maxdepth: 2
