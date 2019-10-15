@@ -45,16 +45,20 @@ breathe_default_project = "open-simulation-interface"
 # Setup the exhale extension
 exhale_args = {
     # These arguments are required
-    "containmentFolder":     "./api",
+    "containmentFolder":     "./osi",
     "rootFileName":          "library_root.rst",
-    "rootFileTitle":         "Library API",
+    "rootFileTitle":         "OSI Library API",
     "doxygenStripFromPath":  "..",
     # Suggested optional arguments
     "createTreeView":        True,
-    # TIP: if using the sphinx-bootstrap-theme, you need
-    # "treeViewIsBootstrap": True,
-    # "exhaleExecutesDoxygen": False,
-    # "exhaleDoxygenStdin":    "INPUT = /home/vkreschenski/Documents/Projects/osi-documentation/open-simulation-interface"
+    "afterTitleDescription": textwrap.dedent('''
+       .. WARNING::
+
+       Currently this reference is work in progress to port the doxygen 
+       documentation completely to the sphinx documentation. 
+       For the official reference see the current 
+       `OSI reference documentation <https://opensimulationinterface.github.io/open-simulation-interface/annotated.html>`_.
+    ''')
 }
 
 
