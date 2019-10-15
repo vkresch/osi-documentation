@@ -1,27 +1,27 @@
-OSI Reference
-==============
+.. OSI Reference
+.. ==============
 
-.. WARNING::
+.. .. WARNING::
     
-    Currently this reference is work in progress to port the doxygen documentation completely to the sphinx documentation. For the official reference see the current `OSI reference documentation <https://opensimulationinterface.github.io/open-simulation-interface/annotated.html>`_.
+..     Currently this reference is work in progress to port the doxygen documentation completely to the sphinx documentation. For the official reference see the current `OSI reference documentation <https://opensimulationinterface.github.io/open-simulation-interface/annotated.html>`_.
 
 
-Base Moving
------------------------
+.. Base Moving
+.. -----------------------
 
-.. doxygenstruct:: osi3::BaseMoving
-    :project: open-simulation-interface
-    :members:
+.. .. doxygenstruct:: osi3::BaseMoving
+..     :project: open-simulation-interface
+..     :members:
 
-Detected Traffic Light
------------------------
+.. Detected Traffic Light
+.. -----------------------
 
-.. doxygenstruct:: osi3::DetectedTrafficLight
-    :project: open-simulation-interface
-    :members:
+.. .. doxygenstruct:: osi3::DetectedTrafficLight
+..     :project: open-simulation-interface
+..     :members:
 
-General 
---------
+.. General 
+.. --------
 
-.. doxygenindex::
-    :project: open-simulation-interface
+.. .. doxygenindex::
+..     :project: open-simulation-interface
