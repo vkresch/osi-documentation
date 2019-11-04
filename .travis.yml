@@ -41,14 +41,7 @@ install:
         if [ ! -f ${DEPS_DIR}/proto2cpp ] ; then mkdir -p proto2cpp ; git clone ${PROTO2CPP_URL} ${DEPS_DIR}/proto2cpp ; fi
         
     - sudo apt-get install python3-pip libprotobuf-dev protobuf-compiler libenchant1c2a doxygen doxygen-doc doxygen-latex doxygen-gui graphviz
-    - pip install sphinx_rtd_theme
-    - pip install sphinx_git
-    - pip install sphinxcontrib.spelling
-    - pip install progress
-    - pip install doxygen-interface
-    - pip install breathe
-    - pip install exhale
-    - pip install --upgrade recommonmark
+    - pip install -r requirements.txt
 
 # Environment variables.
 env:
